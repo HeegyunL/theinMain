@@ -1,0 +1,39 @@
+
+/* footer */
+footer{width:100%;height:auto;font-weight: bold;position: relative;bottom:0;}
+footer .footer1{width:50rem;margin-left: auto;margin-right: auto; display:flex;flex-wrap: wrap;flex-basis: fit-content;justify-content: space-between;}
+footer .f1-c1{margin:0.5rem 1rem 0 0;width:20%;}
+footer .f-logo{width:8rem; object-fit: contain;}
+footer .f1-c2{font-size: 0.5rem;flex-grow:1; }
+footer .f1-c3{font-size: 0.5rem;float:right;}
+footer .f1-c3 p{text-align:left;}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:774px) and (max-width:1023px) { 
+    footer{width:100%;height:auto; padding:1rem auto;font-weight: bold;position:relative;bottom:0;}
+    footer .footer1{width:40rem;margin-left: auto;margin-right: auto; display:flex;flex-wrap: wrap;justify-content: space-between;}
+    footer .f1-c1{display:none;}
+    /* footer .f-logo{width:8rem;} */
+    footer .f1-c2{font-size: 0.7rem; flex-basis: 40%;}
+    footer .f1-c3{font-size: 0.7rem;flex-basis: 40%; float:right;}
+
+  } 
+  
+  /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+  @media all and (min-width:480px) and (max-width:773px) {  
+    footer{width:100%;height:auto;font-weight: bold;  text-align: center;padding:1rem 0;}
+    footer .footer1{width:30rem;margin-left: auto;margin-right: auto; display:flex;flex-wrap: wrap;justify-content: space-between;}
+    footer .f1-c1{display:none;}
+    /* footer .f-logo{width:10rem} */
+    footer .f1-c2{font-size: 0.7rem; flex-basis: 100%;}
+    footer .f1-c3{font-size: 0.7rem; flex-basis: 100%; }
+    footer .f1-c3 p{ text-align: center; margin: 0 auto; }
+
+  } 
+  
+  /* 모바일 세로 (해상도 ~ 479px)*/ 
+  @media all and (max-width:479px) {
+    footer .f1-c1{display:none;}
+    footer .footer1{ line-height: 1rem;width:20rem;}
+    .address, .ceoName, .companyNum,.time{display:none;}
+  }

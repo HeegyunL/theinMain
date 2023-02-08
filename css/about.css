@@ -1,0 +1,121 @@
+
+section{
+    text-align: center;
+}
+.section1-part1{
+    /* background-color: aqua; */
+    width:100vw;
+    height:30vh;
+}
+.section1-part1 img{
+    margin-top: 4rem;
+    width:100%;
+    height:100%;
+    object-fit: fill;
+}
+.section2,.section3,.section4{
+    width:60%;
+    height:auto;
+    margin: 0 auto;
+}
+.section2, .section3{
+    margin-top: 5rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.section2 h3,.section3 h3{
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+.section2 p,.section3 p{
+   font-size: 0.8rem;
+}
+.section4{
+    margin:6rem auto;
+}
+.section4 div{
+    width:60%;
+    height:10rem;
+    background-color: beige;
+    margin:1rem auto;
+    
+}
+.section4 div img{
+    width:100%;
+    height: 100%;
+}
+.section4 div p{
+    position: relative;
+    bottom:75%;
+    color:white;
+    font-size: 3rem;
+  
+    
+}
+.section4 div p span{
+    color:rgb(81, 81, 242);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+
+  } 
+  
+  /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+  @media all and (min-width:480px) and (max-width:767px) { 
+     
+    .section2,.section3,.section4{
+        width:80%;
+        height:auto;
+        margin: 0 auto;
+    }
+    .section2, .section3{
+        margin-top: 5rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .section4 div{
+        width:80%;
+        height:10rem;
+        background-color: beige;
+        margin:1rem auto;
+        
+    }
+    .section4 div p{
+        position: relative;
+        bottom:70%;
+        color:rgb(81, 81, 242);
+        font-size: 3rem;
+      
+        
+    }
+  } 
+  
+  /* 모바일 세로 (해상도 ~ 479px)*/ 
+  @media all and (max-width:479px) {
+    .section2,.section3,.section4{
+        width:90%;
+        height:auto;
+        margin: 0 auto;
+    }
+    .section2, .section3{
+        margin-top: 5rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .section4 div{
+        width:100%;
+        height:10rem;
+        background-color: beige;
+        margin:1rem auto;
+        
+    }
+    .section4 div p{
+        position: relative;
+        bottom:65%;
+        color:rgb(81, 81, 242);
+        font-size: 3rem;
+      
+        
+    }
+  }

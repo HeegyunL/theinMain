@@ -1,0 +1,69 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+ *{
+    font-family: 'Noto Sans', sans-serif;
+ }
+body{width:100%;height:auto;}
+
+.h1-s2-c1{color:white;}
+
+/* 2번째 섹션의 이미지 밝기 */
+.card1{filter: brightness(60%);}
+.card1:hover{filter: brightness(100%);}
+
+/* 섹션별 타이틀 */
+.titleName{
+   margin-left:3.5vw;
+   padding-top: 3vw;
+}
+
+/* 4번째 섹션 박스 */
+.prod-box{width:20vw; height:16vw;overflow:auto}
+.card-title {padding-top:2vw; font-size: 2vw;}
+.card-text {padding-top:4vw;}
+.prod-move {padding-top:1vw; float: right; margin-right: 2vw;}
+.bi{color:white;}
+.bi:hover{color:#0a0a0a;border-bottom: 1.5px solid #cecece;}
+
+.section{width:70%;}
+
+@media (max-width: 950px) {
+    .section{width:100%}
+    .prod-box{width:20vw; margin-top:1vw;height:16vw;overflow:auto}
+    .card-text {padding-top:1vw; word-wrap: normal;}
+    .prod-move { float: right; margin-right: 2vw;}
+}
+@media (max-width: 600px) {
+    .section{width:100%}
+    .titleName{margin-left:9vw; padding-top: 3vw; }
+    .prod-box{width:90vw; margin-top:1vw;height:30vw;overflow:auto}
+    .card-text {display:none;}
+    .prod-move { float: right; margin-right: 2vw;}
+    }
+
+    /* 모바일 */
+@media (max-width: 380px) {
+
+.menu-name{display:none;}
+.section{width:100%}
+.titleName{margin-left:2vw; padding-top: 3vw; }
+.prod-box{width:100vw; margin-top:1vw;height:30vw;overflow:auto}
+.card-text {display:none;}
+.prod-move { float: right; margin-right: 2vw;}
+}
+/* 위로가기 버튼 */
+#topBtn{
+    position:fixed;
+    top:39vw;
+    right:3vw;
+    width:3vw;
+    height:3vw;
+    background-image: url(../img/top-btn.png);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent:-9999em;
+    margin-top: 1rem;
+    border-radius: 50%;
+    
+}
