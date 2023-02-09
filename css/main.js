@@ -1,21 +1,21 @@
-// $(document).ready(function(){
-//     $(window).scroll(function(){
-//       var scroll = $(window).scrollTop();
-//       if (scroll > 1) {
-//         $("header").css("background" , "linear-gradient(rgba(248, 246, 246, 0.8), rgba(252, 251, 251, 0.8)) ");
-//         $(".h1-s2-c1").css("color" , "black");
-//         $(".h-icon").css("color" , "black");
-//         $(".logo1").attr("src","../img/logo-dark.png");
+$(document).ready(function(){
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if (scroll > 1) {
+        $("header").css("background" , "linear-gradient(rgba(248, 246, 246, 0.8), rgba(252, 251, 251, 0.8)) ");
+        $(".h1-s2-c1").css("color" , "black");
+        $(".h-icon").css("color" , "black");
+        $(".logo1").attr("src","../img/logo-dark.png");
         
-//       }
-//       else{
-//         $("header").css("background" , "");
-//         $(".h1-s2-c1").css("color" , "white");
-//         $(".h-icon").css("color" , "");
-//         $(".logo1").attr("src","../img/logo-white.png");
-//       }
-//     })
-//     })
+      }
+      else{
+        $("header").css("background" , "");
+        $(".h1-s2-c1").css("color" , "white");
+        $(".h-icon").css("color" , "");
+        $(".logo1").attr("src","../img/logo-white.png");
+      }
+    })
+    })
 
     window.onload = function(){
 var mql = window.matchMedia("screen and (max-width: 480px)");

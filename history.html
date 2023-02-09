@@ -92,7 +92,7 @@
                   <li>
                     <p>회사 정보</p>
                     <ul>
-                      <li><a href="about.html">회사 개요</a></li>
+                      <li><a href="about.html">회사 소개</a></li>
                       <li><a href="greeting.html">인사말</a></li>
                       <li><a href="history.html">주요 연혁</a></li>
                       <li><a href="contactUs.html">오시는 길</a></li>
@@ -124,7 +124,7 @@
 
   <section class="section1">
     <div class="section1-part1">
-        <img src="./img/이미지/연혁/Mask group.jpg" alt="">
+        <!-- <img src="./img/이미지/연혁/Mask group.jpg" alt=""> -->
     </div>
     <div class="section1-part1-text">
       <h3>더인은 반도체 부분의 미래</h3>
@@ -139,8 +139,8 @@
     
     <div class="section2-part2">
       <div class="section2-part2-1">
-        <p onclick="clickMove(0)">현재 ~ 2020</p>
-        <p onclick="clickMove(3)">2019 - 2015</p>
+        <p id="now" onclick="clickMove(0)">현재 ~ 2020</p>
+        <p id="pastYear" onclick="clickMove(3)">2019 - 2015</p>
         
       </div>
       <div class="section2-part2-2">
@@ -429,6 +429,7 @@ let history=[
       cardCont3.innerHTML="<p>" + history[center+1].content[i] + "</p>";
       }
     }
+    changeColor();
     ani();
   }
 
@@ -460,7 +461,17 @@ let history=[
     for(let i=0;i<history[center+1].content.length;i++){
     cardCont3.innerHTML="<p>" + history[center+1].content + "</p>";
     }
-
+if(center <= 2 ){
+    let now = document.querySelector("#now");
+    $("#now").css("color" , "blue");
+    $("#past").css("color" , "black");
+  }
+  if(center>2){
+    let past = document.querySelector("#pastYear");
+    $("#now").css("color" , "black");
+    $("#pastYear").css("color" , "blue");
+  }
+  changeColor();
   ani();
     
   }
@@ -501,9 +512,30 @@ let history=[
       cardCont3.innerHTML="<p>" + history[center+1].content + "</p>";
       }
       ani();
+      changeColor();
     }
     ani();
   }
+ function changeColor(){
+   if(center <= 2 ){
+    $("#now").css("color" , "#154B9A");
+    $("#now").css("text-decoration" , "underline");
+    $("#now").css("text-underline-position" , "under");
+    $("#pastYear").css("color" , "black");
+    $("#pastYear").css("text-decoration" , "none");
+    text-underline-position
+  }else{
+    $("#now").css("color" , "black");
+    $("#now").css("text-decoration" , "none");
+    
+    $("#pastYear").css("color" , "#154B9A");
+    $("#pastYear").css("text-decoration" , "underline");
+    $("#pastYear").css("text-underline-position" , "under");
+  }
+}
+$("#now").css("color" , "#154B9A");
+    $("#now").css("text-decoration" , "underline");
+    $("#now").css("text-underline-position" , "under");
 </script>
 
 
