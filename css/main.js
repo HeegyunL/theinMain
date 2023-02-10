@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       if (scroll > 1) {
-        $("header").css("background" , "linear-gradient(rgba(248, 246, 246, 0.8), rgba(252, 251, 251, 0.8)) ");
+        $("header").css("background" , "rgba(252, 251, 251) ");
         $(".h1-s2-c1").css("color" , "black");
         $(".h-icon").css("color" , "black");
         $(".logo1").attr("src","../img/logo-dark.png");

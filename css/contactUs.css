@@ -1,27 +1,32 @@
-body{
-    height:100vh;
-  }
-  footer{position: relative;bottom:0;}
-  /* section */
-  .section1{width: 50rem; margin:auto;padding:1.5rem 0;}
-  .section1 h4{margin: 1rem auto; text-align: center;}
-  .map{width: 100%; height: 25rem; margin:auto;padding:2rem 0;}
-  .address{display: flex; font-size: 0.8rem;}
 
-  
+/* section */
+.section1{width: 50rem; margin:auto;padding:1.5rem 0;}
+.section1 .title{margin: 1rem auto; text-align: center; padding-top: 4rem; font-size: 2rem;}
+.map{width: 100%; height: 25rem; margin:auto;padding:2rem 0;}
+.root_daum_roughmap {width:100% !important;}
+.address{display: flex; font-size: 0.8rem;flex-wrap: wrap;}
+.address p:nth-child(2){margin-left: 2rem;}
+footer{position: relative;bottom:0;}
   /* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
   @media all and (min-width:774px) and (max-width:1023px) { 
-    .section1{width:80%}
+    .section1{width:40rem;}
+    .map{width: 40rem; height: 25rem; margin:auto;padding:2rem 0;}
     footer{position: relative;bottom:0;}
     } 
     
     /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
     @media all and (min-width:480px) and (max-width:773px) {
+      .section1{width:30rem;}
+      .map{width: 30rem; height: 25rem; margin:auto;padding:2rem 0;}
       footer{position: relative;bottom:0;}
-  
+      .address p:nth-child(2){margin-left: 0;}
     } 
     
     /* 모바일 세로 (해상도 ~ 479px)*/ 
     @media all and (max-width:479px) {
+      .section1{width:20rem;}
+      .map{width: 20rem; height: 25rem; margin:auto;padding:2rem 0;}
       footer{position: relative;bottom:0;}
+      .address p{flex-basis: 100%;}
+      .address p:nth-child(2){margin-left: 0;}
     }
