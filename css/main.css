@@ -122,7 +122,7 @@ body{width:100%;height:auto;}
 .s3-frame{width:20rem;height:auto;margin: 0 auto;text-align: center; color:white;}
 .s3-frame p:nth-child(2){font-size:1.1rem; font-weight: bold;padding-top: 4rem;}
 .s3-frame p:nth-child(3){font-size:0.8rem; font-weight: bold;}
-.tech-box div{flex-basis: 5rem;}
+.tech-box div{flex-basis: 4rem;}
 
 /* 4번째 섹션 박스 */
 .section4{width:20rem; margin:3rem auto;}
