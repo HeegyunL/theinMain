@@ -25,10 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <style>
     
-    </style>
-
 
 </head>
 
@@ -164,17 +161,17 @@
       <div class="f1-c1"><img class="f-logo" src="./img/logo_black.png"></div>
       <div class="f1-c2 ">
         <div class="">
-          <p class="ceoName">(주)더인 대표 이사 : 김태형</p>
-          <p class="companyNum">사업자 등록번호 : 636 - 88 - 00020</p>
+          <p class="ceoName">(주)더인 대표 이사 : 김태형 </p>
+          <p class="companyNum"> / 사업자 등록번호 : 636 - 88 - 00020</p>
         </div>
-        <p class="">주소 : 서울특별시 강남구 봉은사로 121 5층 (신논현역 3번출구 도보 3분)</p>
+        <p class="address">주소 : 서울특별시 강남구 봉은사로 121 5층</p>
       </div>
       <div class="f1-c3">
         <p class="time">AM 09:00 ~ PM 06:00</p>
         <p>TEL : 02 - 3474 - 8415</p>
         <p class="">E-mail : thein.kr@gmail.com</p>
-        <p class="copyright text-nowrap">COPYRIGHT© (주) 더 인. All rights resrved.</p>
       </div>
+      <p class="copyright text-nowrap">COPYRIGHT© (주) 더 인. All rights resrved.</p>
     </div>
   </footer>
 </body>
@@ -215,11 +212,13 @@ $(window).scroll(function(){
     $("header").css("background" , "white");
     $(".h1-s2-c1").css("color" , "black");
     $(".h-icon").css("color" , "black");
+    $("header").css("border-bottom" , "1.5px solid #cecece");
   }
   else{
     $("header").css("background" , "");
     $(".h1-s2-c1").css("color" , "");
     $(".h-icon").css("color" , "");
+    $("header").css("border-bottom" , "");
   }
 })
 })

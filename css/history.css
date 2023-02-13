@@ -14,14 +14,13 @@
 .section2{width:50rem;}
 .section2-part1{margin:1rem 0; font-size: 1.2rem; font-weight: bold;}
 .section2-part2{ display: flex; flex-wrap: wrap;}
-.section2-part2-1{width:20%;height:20rem;padding:2rem 0;font-weight: bold;}
+.section2-part2-1{width:15%;height:20rem;padding:2rem 0;font-weight: bold;}
 
-.section2-part2-2{width:80%;height:max-content;display: flex;overflow: hidden;}
-.history-line{width:42rem;position: relative;left:10rem; top:7.5rem; border:1px solid #747272; z-index:-1;}
+.section2-part2-2{width:85%;height:max-content;display: flex;overflow: hidden;}
+.history-line{width:45rem;position: relative;left:7rem; top:9.7rem; border:1px solid #747272; z-index:-1;}
 .section2-card{
     /* background-color: aquamarine; */
-    width:50%;
-    height:100%;
+    width:100%;
     margin :0 auto;
     padding:1rem 0;
 }
@@ -30,10 +29,11 @@
     position: relative;
     right: 4rem;
     /* background-color: aquamarine; */
-    width:50%;
-    height:100%;
+    width:65%;
+    height:25rem;
     padding:1rem 0;
     margin-left: 1.5rem;
+    overflow: hidden;
 }
 
 .section2-card3{
@@ -41,12 +41,13 @@
     position: relative;
     left:4rem;
     /* background-color: aquamarine; */
-    width:50%;
-    height:100%;
+    width:65%;
+    height:25rem;
     padding:1rem 0;
+    overflow: hidden;
 }
 
-.section2-card-1{font-size: 2.5rem;}
+.section2-card-1{font-size: 4rem;}
 
 .section2-card i{color:#154B9A;}
 .section2-card-2 {margin:1rem 0;}
@@ -66,38 +67,38 @@ padding-top: 1rem;
     width:100%;
     height:40vh;
 }
-.history-line{width:30rem;position: relative;left:10rem; top:7.5rem; border:1px solid #747272; z-index:-1;}
+.history-line{width:32rem;position: relative;left:8rem; top:9.7rem; border:1px solid #747272; z-index:-1;}
     .section2{width:40rem;}
-    .section2-part2-1{flex-basis: 30%;}
+    .section2-part2-1{flex-basis: 20%;}
 
-    .section2-part2-2{width:70%;height:20rem;display: flex;overflow-y:auto;}
+    .section2-part2-2{width:80%;height:20rem;display: flex;overflow-y:auto;}
     } 
     
-    /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
-    @media all and (min-width:480px) and (max-width:773px) {
-        .section1{height: 30vh;}
-        .section1-part1{
-            background: url("../img/이미지/연혁/Mask\ group.jpg");
-            background-position: center center;
-            width:100%;
-            height:28vh;
-        }
-        .section1-part1-text{position:relative; top:-6rem;color:white;text-align: center; font-size: 1rem;}
-        .section1-part1-text p{display:none;}
-        .section1-part1 img{height:30vh; width: 100%;}
-        .section2{width:32rem;}
-        .section2-part1{text-align: center; font-size: 2rem;}
-
-        .history-line{width:32rem;position: relative;left:0rem; top:15.5rem; border:1px solid #747272; z-index:-1;}
-        .section2-part2{ display: flex; flex-wrap: wrap;}
-        .section2-part2-1{flex-basis:100%;height:8rem;font-weight: bold;text-align: center;}
-        
-        .section2-part2-2{flex-basis:100%;height:max-content;display: flex;overflow: hidden;text-align: center;}
-        .arrow{
-        flex-basis: 100%;
-        text-align: center;
-        }
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:480px) and (max-width:773px) {
+    .section1{height: 30vh;}
+    .section1-part1{
+        background: url("../img/이미지/연혁/Mask\ group.jpg");
+        background-position: center center;
+        width:100%;
+        height:28vh;
     }
+    .section1-part1-text{position:relative; top:-6rem;color:white;text-align: center; font-size: 1rem;}
+    .section1-part1-text p{display:none;}
+    .section1-part1 img{height:30vh; width: 100%;}
+    .section2{width:32rem;}
+    .section2-part1{text-align: center; font-size: 2rem;}
+
+    .history-line{width:32rem;position: relative;left:0rem; top:17.8rem; border:1px solid #747272; z-index:-1;}
+    .section2-part2{ display: flex; flex-wrap: wrap;}
+    .section2-part2-1{flex-basis:100%;height:8rem;font-weight: bold;text-align: center;}
+    
+    .section2-part2-2{flex-basis:100%;height:max-content;display: flex;overflow: hidden;text-align: center;}
+    .arrow{
+    flex-basis: 100%;
+    text-align: center;
+    }
+}
     
     /* 모바일 세로 (해상도 ~ 479px)*/ 
     @media all and (max-width:479px) {
@@ -112,7 +113,7 @@ padding-top: 1rem;
         .section1-part1 img{height:30vh; width: 100%;}
         .section1-part1-text p{display:none;}
 
-        .history-line{width:15rem;position: relative;left:4rem; top:15.5rem; border:1px solid #747272; z-index:-1;}
+        .history-line{width:15rem;position: relative;left:4rem; top:17.8rem; border:1px solid #747272; z-index:-1;}
         .section2{width:22rem;}
         .section2-part1{text-align: center; font-size: 2rem;}
         .section2-part2{ display: flex; flex-wrap: wrap;}
@@ -124,4 +125,6 @@ padding-top: 1rem;
         text-align: center;
         }
         #card2, #card3{display: none;}
+
+        
     }

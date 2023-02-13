@@ -17,7 +17,7 @@ section{width:100%;background-color: #fadada; margin-left: auto;margin-right: au
 .s2-frame img{width:50rem;height:auto;margin: 0 auto;}
 
 
-section hr{margin-top: 5rem;margin-bottom: 5rem;}
+section hr{margin:1rem auto}
 /* section3 */
 .section3{width:100%;height:auto;background-color: white; margin: 3rem auto;}
 .s3-frame{width:50rem;height:auto;margin: 0 auto;}
@@ -25,10 +25,10 @@ section hr{margin-top: 5rem;margin-bottom: 5rem;}
 .s3-frame img{width:50rem;height:auto;margin: 0 auto;}
 
 /* section4 */
-.section4{width:100%;height:auto;background-color: #fadada; margin: 3rem auto;}
+.section4{width:100%;height:auto;background-color: #fadada; margin: 1rem auto;}
 .s4-frame{width:50rem;height:auto;margin: 0 auto;}
 .s4-frame .result{font-size: 1.5rem;font-weight: bold;}
-.s4-frame img{width:50rem;height:auto;margin:3rem  auto;}
+.s4-frame img{width:50rem;height:auto;margin:2rem  auto;}
 
 
 /* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
@@ -58,7 +58,7 @@ section hr{margin-top: 5rem;margin-bottom: 5rem;}
 /* section4 */
 .s4-frame{width:40rem;height:auto;margin: 0 auto;}
 .s4-frame .result{font-size: 1.5rem;font-weight: bold;}
-.s4-frame img{width:50rem;height:auto;margin:3rem  auto;}
+.s4-frame img{width:40rem;height:auto;margin:3rem  auto;}
   } 
   
   /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 

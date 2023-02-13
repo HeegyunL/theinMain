@@ -6,6 +6,7 @@ $(document).ready(function(){
         $(".h1-s2-c1").css("color" , "black");
         $(".h-icon").css("color" , "black");
         $(".logo1").attr("src","../img/logo-dark.png");
+        $("header").css("border-bottom" , "1.5px solid #cecece");
         
       }
       else{
@@ -13,11 +14,14 @@ $(document).ready(function(){
         $(".h1-s2-c1").css("color" , "white");
         $(".h-icon").css("color" , "");
         $(".logo1").attr("src","../img/logo-white.png");
+        $("header").css("border-bottom" , "")
       }
     })
     })
 
-    window.onload = function(){
+
+  
+  window.onload = function(){
 var mql = window.matchMedia("screen and (max-width: 480px)");
 const nav1 = document.getElementById('header1');
 const nav2 = document.getElementById('header2-back');

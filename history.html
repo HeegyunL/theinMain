@@ -183,17 +183,17 @@
       <div class="f1-c1"><img class="f-logo" src="./img/logo_black.png"></div>
       <div class="f1-c2 ">
         <div class="">
-          <p class="ceoName">(주)더인 대표 이사 : 김태형</p>
-          <p class="companyNum">사업자 등록번호 : 636 - 88 - 00020</p>
+          <p class="ceoName">(주)더인 대표 이사 : 김태형 </p>
+          <p class="companyNum"> / 사업자 등록번호 : 636 - 88 - 00020</p>
         </div>
-        <p class="">주소 : 서울특별시 강남구 봉은사로 121 5층 (신논현역 3번출구 도보 3분)</p>
+        <p class="address">주소 : 서울특별시 강남구 봉은사로 121 5층</p>
       </div>
       <div class="f1-c3">
         <p class="time">AM 09:00 ~ PM 06:00</p>
         <p>TEL : 02 - 3474 - 8415</p>
         <p class="">E-mail : thein.kr@gmail.com</p>
-        <p class="copyright text-nowrap">COPYRIGHT© (주) 더 인. All rights resrved.</p>
       </div>
+      <p class="copyright text-nowrap">COPYRIGHT© (주) 더 인. All rights resrved.</p>
     </div>
   </footer>
 </body>
@@ -235,7 +235,7 @@ $(window).scroll(function(){
     $("header").css("background" , "white");
     $(".h1-s2-c1").css("color" , "black");
     $(".h-icon").css("color" , "black");
-    
+    $("header").css("border-bottom" , "1.5px solid #cecece");
     $(".h-logo").attr("src","../img/logo-dark.png");
   }
   else{
@@ -243,6 +243,7 @@ $(window).scroll(function(){
     $(".h1-s2-c1").css("color" , "");
     $(".h-icon").css("color" , "");
     $(".h-logo").attr("src","../img/logo-white.png");
+    $("header").css("border-bottom" , "");
   }
 })
 })
@@ -366,8 +367,6 @@ let history=[
     element3.classList.remove('animate__animated', 'animate__fadeInRight');
     });
 
- 
-         
   }
   
   let center = 0;
@@ -436,7 +435,10 @@ let history=[
   }
 
   function next() {
-  center = center+1;
+    center++;
+    if(center ==history.length){
+      center=0
+    }
     if(center ==history.length-1){
       cardYear3.innerHTML = history[0].year;
       for(let i=0;i<history[0].content.length;i++){
@@ -444,14 +446,29 @@ let history=[
       }
       ani();
     }
+    if(center==0){
+      cardYear1.innerHTML = history[center].year;
+      for(let i=0;i<history[center].content.length;i++){
+      cardCont1.innerHTML="<p>" + history[center].content + "</p>";
+      ani()
+      changeColor();
+      }
 
-    // if(center == 5){
-    //   center = 0;
-      
-    // }
+      cardYear2.innerHTML = history[history.length-1].year;
+      for(let i=0;i<history[history.length-1].content.length;i++){
+      cardCont2.innerHTML="<p>" + history[history.length-1].content + "</p>";
+      }
+
+      cardYear3.innerHTML = history[center+1].year;
+      for(let i=0;i<history[center+1].content.length;i++){
+      cardCont3.innerHTML="<p>" + history[center+1].content + "</p>";
+      }
+    }
+
     cardYear1.innerHTML = history[center].year;
     for(let i=0;i<history[center].content.length;i++){
     cardCont1.innerHTML="<p>" + history[center].content + "</p>";
+    ani()
     }
 
     cardYear2.innerHTML = history[center-1].year;
@@ -463,41 +480,52 @@ let history=[
     for(let i=0;i<history[center+1].content.length;i++){
     cardCont3.innerHTML="<p>" + history[center+1].content + "</p>";
     }
-if(center <= 2 ){
-    let now = document.querySelector("#now");
-    $("#now").css("color" , "blue");
-    $("#past").css("color" , "black");
-  }
-  if(center>2){
-    let past = document.querySelector("#pastYear");
-    $("#now").css("color" , "black");
-    $("#pastYear").css("color" , "blue");
-  }
   changeColor();
   ani();
-    
+
   }
 
   function pre() {
-    center = center -1;
-    
+    center--;
+    if(center == -1){
+      center=history.length-1;
+      ani();
+      changeColor();
+    }
     if(center ==0){
+      
+      cardYear1.innerHTML = history[center].year;
+      for(let i=0;i<history[center].content.length;i++){
+      cardCont1.innerHTML="<p>" + history[center].content + "</p>";
+      }
 
-    cardYear1.innerHTML = history[center].year;
-    for(let i=0;i<history[center].content.length;i++){
-    cardCont1.innerHTML="<p>" + history[center].content + "</p>";
-    }
+      cardYear2.innerHTML = history[history.length-1].year;
+      for(let i=0;i<history[history.length-1].content.length;i++){
+      cardCont2.innerHTML="<p>" + history[center-1].content + "</p>";
+      }
 
-    cardYear2.innerHTML = history[history.length-1].year;
-    for(let i=0;i<history[history.length-1].content.length;i++){
-    cardCont2.innerHTML="<p>" + history[center-1].content + "</p>";
+      cardYear3.innerHTML = history[center+1].year;
+      for(let i=0;i<history[center+1].content.length;i++){
+      cardCont3.innerHTML="<p>" + history[center+1].content + "</p>";
+      }
+      ani();
     }
+    else if(center ==history.length-1){
+      cardYear1.innerHTML = history[history.length-1].year;
+      for(let i=0;i<history[history.length-1].content.length;i++){
+      cardCont1.innerHTML="<p>" + history[history.length-1].content + "</p>";
+      }
 
-    cardYear3.innerHTML = history[center+1].year;
-    for(let i=0;i<history[center+1].content.length;i++){
-    cardCont3.innerHTML="<p>" + history[center+1].content + "</p>";
-    }
-    ani();
+      cardYear2.innerHTML = history[center-1].year;
+      for(let i=0;i<history[center-1].content.length;i++){
+      cardCont2.innerHTML="<p>" + history[center-1].content + "</p>";
+      }
+
+      cardYear3.innerHTML = history[0].year;
+      for(let i=0;i<history[0].content.length;i++){
+      cardCont3.innerHTML="<p>" + history[0].content + "</p>";
+      }
+      ani();
     }else{
       cardYear1.innerHTML = history[center].year;
       for(let i=0;i<history[center].content.length;i++){
@@ -519,13 +547,12 @@ if(center <= 2 ){
     ani();
   }
  function changeColor(){
-   if(center <= 2 ){
+   if(center ==0 || center <= 2 ){
     $("#now").css("color" , "#154B9A");
     $("#now").css("text-decoration" , "underline");
     $("#now").css("text-underline-position" , "under");
     $("#pastYear").css("color" , "black");
     $("#pastYear").css("text-decoration" , "none");
-    text-underline-position
   }else{
     $("#now").css("color" , "black");
     $("#now").css("text-decoration" , "none");
